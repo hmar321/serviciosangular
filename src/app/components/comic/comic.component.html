@@ -1,0 +1,8 @@
+<div style="float: left;padding: 20px;">
+    <h1 style="color: red;">{{comic.nombre}}</h1>
+    <img src="{{comic.imagen}}" style="width: 200px;height: 200px;">
+    <p style="color: blueviolet;">{{comic.descripcion}}</p>
+    <button style="background-color: green;color: white;" (click)="enviarFavorito()">Favorito</button>
+    <button style="background-color: red;color: white;" (click)="deleteComic()">Eliminar</button>
+    <button style="background-color: blue;color: white;" (click)="modificarComic()">Modificar</button>
+</div>
