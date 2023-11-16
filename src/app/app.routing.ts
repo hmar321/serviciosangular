@@ -6,6 +6,7 @@ import { PersonasapiComponent } from "./components/personasapi/personasapi.compo
 import { CochesComponent } from "./components/coches/coches.component";
 import { PlantillaComponent } from "./components/plantilla/plantilla.component";
 import { EmpleadosComponent } from "./components/empleados/empleados.component";
+import { MultipleComponent } from "./components/multiple/multiple.component";
 
 const rutas: Routes = [
     { path: "", component: HomeComponent },
@@ -14,6 +15,7 @@ const rutas: Routes = [
     { path: "coches", component: CochesComponent },
     { path: "plantilla", component: PlantillaComponent },
     { path: "empleados", component: EmpleadosComponent },
+    { path: "multiple", component: MultipleComponent },
 ];
 
 export const appRoutingProviders: any[] = [];

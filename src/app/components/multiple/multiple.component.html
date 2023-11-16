@@ -1,0 +1,33 @@
+<div>
+    <h1 class="text-primary">Plantilla Component</h1>
+    <!-- <form #funcionesform="ngForm">
+        <label class="form-label">Empleados función</label>
+        <select (change)="buscarEmpleados()" multiple class="form-select" name="cajafuncion" #cajafuncion="ngModel"
+            [(ngModel)]="seleccionados">
+            <option value="" selected hidden>Selecciona una función</option>
+            <option *ngFor="let funcion of funciones" value="{{funcion}}">{{funcion}}</option>
+        </select>
+    </form> -->
+
+    <p-multiSelect (onChange)="buscarEmpleadosPrime()" [options]="funcionesPrime" [(ngModel)]="seleccionados" optionLabel="name" placeholder="Selecciona funciones"></p-multiSelect>
+    <table class="table table-striped table-dark mt-3" *ngIf="empleados">
+        <thead>
+            <tr>
+                <th>idHospital</th>
+                <th>idSala</th>
+                <th>apellido</th>
+                <th>turno</th>
+                <th>salario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let empleado of empleados">
+                <td>{{empleado.idHospital}}</td>
+                <td>{{empleado.idSala}}</td>
+                <td>{{empleado.apellido}}</td>
+                <td>{{empleado.turno}}</td>
+                <td>{{empleado.salario}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

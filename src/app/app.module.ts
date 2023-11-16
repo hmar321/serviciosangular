@@ -18,6 +18,8 @@ import { CochesService } from './services/coches.service';
 import { PlantillaComponent } from './components/plantilla/plantilla.component';
 import { PlantillaService } from './services/plantilla.service';
 import { EmpleadosComponent } from './components/empleados/empleados.component';
+import { MultipleComponent } from './components/multiple/multiple.component';
+import { MultiSelectModule } from 'primeng/multiselect';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { EmpleadosComponent } from './components/empleados/empleados.component';
     PersonasapiComponent,
     CochesComponent,
     PlantillaComponent,
-    EmpleadosComponent
+    EmpleadosComponent,
+    MultipleComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import { EmpleadosComponent } from './components/empleados/empleados.component';
     HttpClientModule,
     DropdownModule,
     BrowserAnimationsModule,
+    MultiSelectModule,
   ],
   providers: [
     ComicsService,
